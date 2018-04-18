@@ -21,7 +21,8 @@ def long_planeteer_calls(word_calls)
   #word_calls.any? { |call| call.length > 4 } Much shorter version!
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(strings)
+  #strings = ["crackers", "gouda", "thyme"]
   cheese_types = ["cheddar", "gouda", "camembert"]
+  strings.find { |cheese| cheese_types.include?(cheese) }
 end
