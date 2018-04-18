@@ -9,7 +9,11 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(word_calls)
+  word_calls.each { |call| call >= 4 }
   if word_calls.count >= 4
+    true
+  else
+    false
   end
 end
 
