@@ -10,7 +10,7 @@ end
 
 def long_planeteer_calls(word_calls)
   if word_calls >= 4 == true
-  end 
+  end
 end
 
 def find_the_cheese# code an argument here
