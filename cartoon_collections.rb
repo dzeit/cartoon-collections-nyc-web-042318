@@ -9,7 +9,7 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(word_calls)
-  long_calls = word_calls.map { |call| call.length >= 4 } 
+  long_calls = word_calls.map { |call| call.length >= 4 }
   # ternary: word_calls >= 4 ? true : false
   if long_calls.any? { |calls| calls == true } #=> returns true or false
     true
