@@ -1,4 +1,3 @@
-require 'pry'
 def roll_call_dwarves(dwarf_names)
   dwarf_names.each.with_index(1) do |name, i|
     puts "#{i}. #{name}"
@@ -11,7 +10,6 @@ end
 
 def long_planeteer_calls(word_calls)
   long_calls = word_calls.map { |call| call.length > 4 }
-  #binding.pry
   # ternary: word_calls > 4 ? true : false
   if long_calls.any? { |calls| calls == true } #=> returns true or false
     true
