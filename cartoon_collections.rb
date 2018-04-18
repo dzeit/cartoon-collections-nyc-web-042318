@@ -10,16 +10,15 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(word_calls)
-  # long_calls = word_calls.map { |call| call.length > 4 }
-  # #binding.pry
-  # # ternary: word_calls > 4 ? true : false
-  # if long_calls.any? { |calls| calls.length == true } #=> returns true or false
-  #   true
-  # else
-  #   false
-  # end
-
-  word_calls.any? { |call| call.length > 4 }
+  long_calls = word_calls.map { |call| call.length > 4 }
+  #binding.pry
+  # ternary: word_calls > 4 ? true : false
+  if long_calls.any? { |calls| calls.length == true } #=> returns true or false
+    true
+  else
+    false
+  end
+  #word_calls.any? { |call| call.length > 4 } Much shorter version!
 end
 
 def find_the_cheese# code an argument here
